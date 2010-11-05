@@ -32,7 +32,8 @@ vendor/acer/liquid/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/
 vendor/acer/liquid/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
 vendor/acer/liquid/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
 vendor/acer/liquid/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-vendor/acer/liquid/proprietary/lib/libgsl.so:system/lib/libgsl.so
+vendor/acer/liquid/proprietary/lib/libgsl.so:system/lib/libgsl.so \
+vendor/acer/liquid/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 #Copy camera libraries
 PRODUCT_COPY_FILES += \
