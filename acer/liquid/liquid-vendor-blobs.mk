@@ -15,8 +15,7 @@
 # All the blobs necessary for liquid
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-vendor/acer/liquid/proprietary/lib/libgps.so:obj/lib/libgps.so \
-vendor/acer/liquid/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+vendor/acer/liquid/proprietary/lib/libgps.so:obj/lib/libgps.so
 
 # Copy RIL libraries (not working yet though... using a Chroot with 2G linked libraries for RIL).
 PRODUCT_COPY_FILES += \
@@ -35,7 +34,6 @@ vendor/acer/liquid/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 #Copy camera libraries
 PRODUCT_COPY_FILES += \
-vendor/acer/liquid/proprietary/lib/libcamera.so:system/lib/libcamera.so \
 vendor/acer/liquid/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
 vendor/acer/liquid/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
 vendor/acer/liquid/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so
