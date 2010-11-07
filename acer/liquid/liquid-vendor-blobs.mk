@@ -100,7 +100,7 @@ vendor/acer/liquid/proprietary/data/system/ms3c_yamaha.cfg:data/system/ms3c_yama
 # Copy proprietary Omx* V/A encoders and decoders
 PRODUCT_COPY_FILES += \
 vendor/acer/liquid/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
-vendor/acer/liquid/proprietary/lib/libOmxAacEnc.so:system/lib/libOmxAacDec.so \
+vendor/acer/liquid/proprietary/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
 vendor/acer/liquid/proprietary/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
 vendor/acer/liquid/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
 vendor/acer/liquid/proprietary/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
