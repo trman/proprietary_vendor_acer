@@ -61,7 +61,7 @@ vendor/acer/liquid/proprietary/lib/libgps.so:system/lib/libgps.so
 PRODUCT_COPY_FILES += \
 vendor/acer/liquid/proprietary/lib/copybit.qsd8k.so:system/lib/hw/copybit.qsd8k.so \
 vendor/acer/liquid/proprietary/lib/gralloc.default.so:system/lib/hw/gralloc.default.so \
-vendor/acer/liquid/proprietary/lib/lgralloc.qsd8k.so:system/lib/hw/gralloc.qsd8k.so
+vendor/acer/liquid/proprietary/lib/gralloc.qsd8k.so:system/lib/hw/gralloc.qsd8k.so
 
 # Copy WiFi firmware and config
 PRODUCT_COPY_FILES += \
