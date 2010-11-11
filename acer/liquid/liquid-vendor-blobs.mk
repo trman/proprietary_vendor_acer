@@ -15,6 +15,16 @@
 # All the blobs necessary for liquid
 # Kernel modules
 PRODUCT_COPY_FILES += \
+vendor/acer/liquid/proprietary/lib/modules/bcm4329.ko:obj/lib/modules/bcm4329.ko \
+vendor/acer/liquid/proprietary/lib/modules/cifs.ko:obj/lib/modules/cifs.ko \
+vendor/acer/liquid/proprietary/lib/modules/dhd.ko:obj/lib/modules/dhd.ko \
+vendor/acer/liquid/proprietary/lib/modules/exportfs.ko:obj/lib/modules/exportfs.ko \
+vendor/acer/liquid/proprietary/lib/modules/lockd.ko:obj/lib/modules/lockd.ko \
+vendor/acer/liquid/proprietary/lib/modules/nfs.ko:obj/lib/modules/nfs.ko \
+vendor/acer/liquid/proprietary/lib/modules/nfs_acl.ko:obj/lib/modules/nfs_acl.ko \
+vendor/acer/liquid/proprietary/lib/modules/nfsd.ko:obj/lib/modules/nfsd.ko \
+vendor/acer/liquid/proprietary/lib/modules/ramzswap.ko:obj/lib/modules/ramzswap.ko \
+vendor/acer/liquid/proprietary/lib/modules/tun.ko:obj/lib/modules/tun.ko
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
