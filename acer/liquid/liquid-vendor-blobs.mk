@@ -13,14 +13,37 @@
 # limitations under the License.
 
 # All the blobs necessary for liquid
+# Kernel modules
+PRODUCT_COPY_FILES += \
+
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
 vendor/acer/liquid/proprietary/lib/libgps.so:obj/lib/libgps.so
 
-# Copy RIL libraries (not working yet though... using a Chroot with 2G linked libraries for RIL).
+# Copy RIL libraries (hex edited with a 3G prelink)
 PRODUCT_COPY_FILES += \
 vendor/acer/liquid/proprietary/lib/libril-acer-1.so:system/lib/libril-acer-1.so \
-vendor/acer/liquid/proprietary/lib/libril-acerril-hook-oem.so:system/lib/libril-acerril-hook-oem.so
+vendor/acer/liquid/proprietary/lib/libril-acerril-hook-oem.so:system/lib/libril-acerril-hook-oem.so \
+vendor/acer/liquid/proprietary/lib/libril.so:system/lib/libril.so \
+vendor/acer/liquid/proprietary/lib/libauth.so:system/lib/libauth.so \
+vendor/acer/liquid/proprietary/lib/libcm.so:system/lib/libcm.so \
+vendor/acer/liquid/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+vendor/acer/liquid/proprietary/lib/libdll.so:system/lib/libdll.so \
+vendor/acer/liquid/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+vendor/acer/liquid/proprietary/lib/libdss.so:system/lib/libdss.so \
+vendor/acer/liquid/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
+vendor/acer/liquid/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
+vendor/acer/liquid/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
+vendor/acer/liquid/proprietary/lib/libnv.so:system/lib/libnv.so \
+vendor/acer/liquid/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
+vendor/acer/liquid/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
+vendor/acer/liquid/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
+vendor/acer/liquid/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+vendor/acer/liquid/proprietary/lib/libqueue.so:system/lib/libqueue.so \
+vendor/acer/liquid/proprietary/lib/libwms.so:system/lib/libwms.so \
+vendor/acer/liquid/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
+vendor/acer/liquid/proprietary/bin/qmuxd:system/bin/qmuxd \
+vendor/acer/liquid/proprietary/bin/rild:system/bin/rild
 
 # Copy EGL libraries
 PRODUCT_COPY_FILES += \
