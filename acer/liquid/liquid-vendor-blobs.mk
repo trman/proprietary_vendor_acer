@@ -28,32 +28,34 @@ vendor/acer/liquid/proprietary/lib/modules/tun.ko:obj/lib/modules/tun.ko
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
+vendor/acer/liquid/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
 vendor/acer/liquid/proprietary/lib/libgps.so:obj/lib/libgps.so
 
+
 # Copy RIL libraries (hex edited with a 3G prelink)
-PRODUCT_COPY_FILES += \
-vendor/acer/liquid/proprietary/lib/libril-acer-1.so:system/lib/libril-acer-1.so \
-vendor/acer/liquid/proprietary/lib/libril-acerril-hook-oem.so:system/lib/libril-acerril-hook-oem.so \
-vendor/acer/liquid/proprietary/lib/libril.so:system/lib/libril.so \
-vendor/acer/liquid/proprietary/lib/libauth.so:system/lib/libauth.so \
-vendor/acer/liquid/proprietary/lib/libcm.so:system/lib/libcm.so \
-vendor/acer/liquid/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-vendor/acer/liquid/proprietary/lib/libdll.so:system/lib/libdll.so \
-vendor/acer/liquid/proprietary/lib/libdsm.so:system/lib/libdsm.so \
-vendor/acer/liquid/proprietary/lib/libdss.so:system/lib/libdss.so \
-vendor/acer/liquid/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
-vendor/acer/liquid/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
-vendor/acer/liquid/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
-vendor/acer/liquid/proprietary/lib/libnv.so:system/lib/libnv.so \
-vendor/acer/liquid/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
-vendor/acer/liquid/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-vendor/acer/liquid/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
-vendor/acer/liquid/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-vendor/acer/liquid/proprietary/lib/libqueue.so:system/lib/libqueue.so \
-vendor/acer/liquid/proprietary/lib/libwms.so:system/lib/libwms.so \
-vendor/acer/liquid/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
-vendor/acer/liquid/proprietary/bin/qmuxd:system/bin/qmuxd \
-vendor/acer/liquid/proprietary/bin/rild:system/bin/rild
+#PRODUCT_COPY_FILES += \
+#vendor/acer/liquid/proprietary/lib/libril-acer-1.so:system/lib/libril-acer-1.so \
+#vendor/acer/liquid/proprietary/lib/libril-acerril-hook-oem.so:system/lib/libril-acerril-hook-oem.so \
+#vendor/acer/liquid/proprietary/lib/libril.so:system/lib/libril.so \
+#vendor/acer/liquid/proprietary/lib/libauth.so:system/lib/libauth.so \
+#vendor/acer/liquid/proprietary/lib/libcm.so:system/lib/libcm.so \
+#vendor/acer/liquid/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+#vendor/acer/liquid/proprietary/lib/libdll.so:system/lib/libdll.so \
+#vendor/acer/liquid/proprietary/lib/libdsm.so:system/lib/libdsm.so \
+#vendor/acer/liquid/proprietary/lib/libdss.so:system/lib/libdss.so \
+#vendor/acer/liquid/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
+#vendor/acer/liquid/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
+#vendor/acer/liquid/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
+#vendor/acer/liquid/proprietary/lib/libnv.so:system/lib/libnv.so \
+#vendor/acer/liquid/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
+#vendor/acer/liquid/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
+#vendor/acer/liquid/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
+#vendor/acer/liquid/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+#vendor/acer/liquid/proprietary/lib/libqueue.so:system/lib/libqueue.so \
+#vendor/acer/liquid/proprietary/lib/libwms.so:system/lib/libwms.so \
+#vendor/acer/liquid/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
+#vendor/acer/liquid/proprietary/bin/qmuxd:system/bin/qmuxd \
+#vendor/acer/liquid/proprietary/bin/rild:system/bin/rild
 
 # Copy EGL libraries
 PRODUCT_COPY_FILES += \
@@ -67,6 +69,7 @@ vendor/acer/liquid/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 #Copy camera libraries
 PRODUCT_COPY_FILES += \
+vendor/acer/liquid/proprietary/lib/libcamera.so:system/lib/libcamera.so \
 vendor/acer/liquid/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
 vendor/acer/liquid/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
 vendor/acer/liquid/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so
@@ -87,18 +90,12 @@ vendor/acer/liquid/proprietary/lib/libloc-rpc.so:system/lib/libloc-rpc.so \
 vendor/acer/liquid/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
 vendor/acer/liquid/proprietary/lib/libgps.so:system/lib/libgps.so
 
-# Copy CodeAurora's prebuilt QSD8K libaudio, copybit, gralloc (but we need CM's libaudio for FM Radio)
-# vendor/acer/liquid/proprietary/lib/libaudio.so:system/lib/libaudio.so \
-PRODUCT_COPY_FILES += \
-vendor/acer/liquid/proprietary/lib/copybit.qsd8k.so:system/lib/hw/copybit.qsd8k.so \
-vendor/acer/liquid/proprietary/lib/gralloc.default.so:system/lib/hw/gralloc.default.so \
-vendor/acer/liquid/proprietary/lib/gralloc.qsd8k.so:system/lib/hw/gralloc.qsd8k.so
-
-# Copy WiFi firmware and config
+# Copy WiFi/Bluetooth firmware and config
 PRODUCT_COPY_FILES += \
 vendor/acer/liquid/proprietary/etc/firmware/BCM4325.hcd:system/etc/firmware/BCM4325.hcd \
 vendor/acer/liquid/proprietary/etc/firmware/BCM4325.bin:system/etc/firmware/BCM4325.bin \
 vendor/acer/liquid/proprietary/etc/firmware/BCM4325_apsta.bin:system/etc/firmware/BCM4325_apsta.bin \
+vendor/acer/liquid/proprietary/etc/init.salsa.bt.sh:system/etc/init.salsa.bt.sh \
 vendor/acer/liquid/proprietary/etc/wifi/nvram.txt:system/etc/wifi/nvram.txt \
 vendor/acer/liquid/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
